@@ -32,6 +32,46 @@ class iPSDevTestSeeder extends Seeder
             ]);
         }
 
+        DB::table('tags')->insert([
+            [
+                'id' => 152,
+                'name' => 'awesome_tag',
+                'description' => null,
+                'category' => null
+            ],
+            
+            [
+                'id' => 154,
+                'name' => 'Module reminders completed',
+                'description' => null,
+                'category' => null
+            ]
+        ]);
+
+        for ($i = 0; $i <= 6; $i++){
+            DB::table('tags')->insert([
+                [
+                    'id' => 138 + ($i * 2),
+                    'name' => 'Start IAA Module ' . ($i + 1). ' Reminders',
+                    'description' => null,
+                    'category' => null
+                ],
+
+                [
+                    'id' => 124 + ($i * 2),
+                    'name' => 'Start IEA Module ' . ($i + 1). ' Reminders',
+                    'description' => null,
+                    'category' => null
+                ],
+
+                [
+                    'id' => 110 + ($i * 2),
+                    'name' => 'Start IPA Module ' . ($i + 1). ' Reminders',
+                    'description' => null,
+                    'category' => null
+                ]
+            ]);
+        }
 
     }
 }
