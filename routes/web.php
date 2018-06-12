@@ -37,3 +37,7 @@ Route::get(
 Route::get('/infusionsoft_test_get_all_tags', 
 	'InfusionsoftController@testInfusionsoftIntegrationGetAllTags'
 )->name('api.infusionsoft_test_get_all_tags');
+
+Route::get('/infusionsoft_test_create_contact/{email}/{products}', 
+	'InfusionsoftController@testInfusionsoftIntegrationCreateContact'
+)->name('api.infusionsoft_test_create_contact');
