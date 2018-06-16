@@ -41,3 +41,7 @@ Route::get('/infusionsoft_test_get_all_tags',
 Route::get('/infusionsoft_test_create_contact/{email}/{products}', 
 	'InfusionsoftController@testInfusionsoftIntegrationCreateContact'
 )->name('api.infusionsoft_test_create_contact');
+
+Route::post('/api/module_reminder_assigner', 
+	'ApiController@moduleReminderAssigner'
+);
